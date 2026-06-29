@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>The Morning Brief — 29 June 2026</title>
+<style>
+  .brief-wrap { background:#EEF0F3; padding:28px 14px; margin:0; }
+  .brief { max-width:640px; margin:0 auto; background:#FFFFFF; }
+  .brief, .brief * { box-sizing:border-box; }
+  .brief { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:#1A1C22; -webkit-font-smoothing:antialiased; }
+
+  /* Masthead */
+  .mast { padding:34px 40px 26px; border-bottom:3px solid #16181D; }
+  .mast .kicker { font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:#15467A; font-weight:700; margin:0 0 10px; }
+  .mast h1 { font-family:Georgia,"Times New Roman",serif; font-size:38px; line-height:1; letter-spacing:-.5px; margin:0; color:#16181D; font-weight:700; }
+  .mast .dateline { display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:6px; margin-top:14px; font-size:12.5px; color:#5A5F6B; }
+  .mast .dateline .ed { letter-spacing:.04em; }
+
+  /* Index */
+  .index { padding:18px 40px; background:#F7F8FA; border-bottom:1px solid #E4E7EC; font-size:13px; color:#3A3F4B; }
+  .index .lbl { font-size:10.5px; letter-spacing:.2em; text-transform:uppercase; color:#8A909C; font-weight:700; display:block; margin-bottom:8px; }
+  .index ol { margin:0; padding:0; list-style:none; columns:2; column-gap:28px; }
+  .index li { padding:3px 0; font-size:13px; }
+  .index .n { color:#15467A; font-weight:700; font-variant-numeric:tabular-nums; margin-right:8px; }
+
+  /* Story */
+  .story { padding:30px 40px; border-bottom:1px solid #ECEEF1; }
+  .eyebrow { display:flex; align-items:center; gap:9px; margin:0 0 11px; }
+  .eyebrow .cat { font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; color:#15467A; font-weight:700; }
+  .eyebrow .dot { width:3px; height:3px; border-radius:50%; background:#C2C7D0; }
+  .eyebrow .meta { font-size:10.5px; letter-spacing:.06em; text-transform:uppercase; color:#9AA0AC; font-weight:600; }
+  .story h2 { font-family:Georgia,"Times New Roman",serif; font-size:23px; line-height:1.22; letter-spacing:-.2px; margin:0 0 12px; color:#16181D; font-weight:700; text-wrap:balance; }
+  .story p.sum { font-size:15.5px; line-height:1.62; margin:0; color:#33373F; }
+
+  details { margin-top:16px; border-top:1px dashed #DDE1E7; }
+  summary { list-style:none; cursor:pointer; padding:13px 0 4px; font-size:12.5px; letter-spacing:.04em; font-weight:700; color:#15467A; display:flex; align-items:center; gap:7px; }
+  summary::-webkit-details-marker { display:none; }
+  summary .tw { font-size:11px; transition:transform .2s ease; display:inline-block; }
+  details[open] summary .tw { transform:rotate(90deg); }
+  details .body { font-size:14.5px; line-height:1.66; color:#41454E; padding:4px 0 6px; }
+  details .body p { margin:0 0 11px; }
+  details .body p:last-child { margin-bottom:0; }
+
+  .src { margin-top:16px; }
+  .src a { display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:600; color:#16181D; text-decoration:none; border-bottom:2px solid #15467A; padding-bottom:1px; }
+  .src .pub { color:#8A909C; font-weight:500; }
+
+  /* Markets mini-table */
+  .mkt { margin:14px 0 2px; width:100%; border-collapse:collapse; font-size:13.5px; }
+  .mkt th { text-align:left; font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:#9AA0AC; font-weight:700; padding:0 0 7px; border-bottom:1px solid #E4E7EC; }
+  .mkt td { padding:7px 0; border-bottom:1px solid #F0F2F5; font-variant-numeric:tabular-nums; }
+  .mkt td.idx { font-weight:600; color:#2A2E36; }
+  .mkt td.chg { text-align:right; }
+  .mkt .dn { color:#B4232A; }
+  .mkt .up { color:#1E7A4D; }
+  .mkt td.num { text-align:right; color:#41454E; }
+
+  /* Column callout */
+  .column { padding:30px 40px; background:#16181D; color:#E8EAEE; border-bottom:1px solid #16181D; }
+  .column .eyebrow .cat { color:#8FB4DC; }
+  .column .eyebrow .meta { color:#6E7480; }
+  .column h2 { font-family:Georgia,"Times New Roman",serif; font-size:21px; line-height:1.25; margin:0 0 10px; color:#FFFFFF; font-weight:700; }
+  .column .why { font-size:14.5px; line-height:1.6; color:#C3C7CF; margin:0 0 14px; font-style:italic; }
+  .column .src a { color:#FFFFFF; border-bottom-color:#8FB4DC; }
+  .column .src .pub { color:#7E848F; }
+
+  .foot { padding:24px 40px 30px; font-size:11.5px; line-height:1.6; color:#9AA0AC; text-align:center; }
+  .foot a { color:#15467A; text-decoration:none; }
+</style>
+</head>
+<body style="margin:0">
+<div class="brief-wrap">
+<div class="brief">
+
+  <div class="mast">
+    <p class="kicker">Daily Intelligence Digest</p>
+    <h1>The Morning Brief</h1>
+    <div class="dateline">
+      <span>Monday, 29 June 2026</span>
+      <span class="ed">Yangon Edition · 9:00 AM (MMT)</span>
+    </div>
+  </div>
+
+  <div class="index">
+    <span class="lbl">In today's brief</span>
+    <ol>
+      <li><span class="n">01</span>Middle East truce &amp; Hormuz</li>
+      <li><span class="n">02</span>Tariffs turn permanent</li>
+      <li><span class="n">03</span>ECB hikes, Fed holds</li>
+      <li><span class="n">04</span>Tech-led market wobble</li>
+      <li><span class="n">05</span>Open-weight AI race</li>
+      <li><span class="n">06</span>UV kills 'forever chemicals'</li>
+      <li><span class="n">07</span>Whales split by dialect</li>
+      <li><span class="n">08</span>Column: The World Ahead</li>
+    </ol>
+  </div>
+
+  <!-- 01 -->
+  <div class="story">
+    <div class="eyebrow"><span class="cat">Global Headlines</span><span class="dot"></span><span class="meta">Middle East</span></div>
+    <h2>Middle East tips toward a fragile truce as the Strait of Hormuz reopens</h2>
+    <p class="sum">After a weekend in which the US and Iran traded direct strikes and Tehran launched drones at Kuwait and Bahrain, ships are again moving through the Strait of Hormuz amid reported progress on a US–Iran deal. Gulf oil exports have recovered to roughly 75% of prewar levels. Iran publicly threatened to halt talks — but a US official says negotiations will resume.</p>
+    <details>
+      <summary><span class="tw">▸</span> The fuller picture</summary>
+      <div class="body">
+        <p>The flashpoint of the past month has been the Strait of Hormuz, the chokepoint for roughly a fifth of seaborne oil. Over the weekend the conflict escalated sharply — direct US–Iran strikes, followed by Iranian drone and missile attacks aimed at Kuwait and Bahrain — before pulling back as diplomatic channels reopened.</p>
+        <p>The market tell is in the tankers: vessels are now openly transiting the strait, Saudi Aramco has resumed loading at Ras Tanura, and the UAE, Kuwait and Qatar are boosting output. That return of supply is why crude has fallen rather than spiked despite the fighting.</p>
+        <p>The diplomacy remains brittle. Tehran's threat to walk away from talks is real leverage, and a single incident in the strait could reverse the calm quickly. Watch the pace of tanker transits as the cleanest real-time gauge of whether the truce holds.</p>
+      </div>
+    </details>
+    <div class="src"><a href="https://www.cbsnews.com/live-updates/us-iran-war-israel-hezbollah-strait-of-hormuz-peace-deal-talks/">Read the full story <span class="pub">· CBS News</span></a></div>
+  </div>
+
+  <!-- 02 -->
+  <div class="story">
+    <div class="eyebrow"><span class="cat">Economic Moves</span><span class="dot"></span><span class="meta">Trade &amp; Growth</span></div>
+    <h2>Tariffs harden from tactic into permanent fixture as growth cools to 3%</h2>
+    <p class="sum">Forecasters now see global growth moderating to about 3.0% in 2026 (3.3% in 2027). The bigger structural shift: the postwar trade consensus has broken. Tariffs have moved from a negotiating tool to a durable feature of policy — rerouting trade flows and pushing firms from cost-efficiency toward resilience: more suppliers, larger inventory buffers, higher working capital.</p>
+    <details>
+      <summary><span class="tw">▸</span> The fuller picture</summary>
+      <div class="body">
+        <p>The growth number is the least interesting part of the story. What economists are flagging is a regime change in how trade works: tariffs are no longer a temporary lever to extract concessions but a standing cost businesses must design around.</p>
+        <p>The practical consequence is a quiet rewiring of supply chains. Firms are diversifying away from single-country sourcing, holding more safety stock, and building redundancy — all of which raise costs and working-capital needs but reduce the risk of a single shock halting production.</p>
+        <p>There's a legal wildcard too: the US Court of International Trade ruled against the administration's 10% global tariffs under Section 122 of the Trade Act of 1974, leaving part of the tariff architecture unresolved and subject to appeal.</p>
+      </div>
+    </details>
+    <div class="src"><a href="https://kpmg.com/us/en/articles/2026/june-2026-global-navigator.html">Read the full story <span class="pub">· KPMG Global Navigator</span></a></div>
+  </div>
+
+  <!-- 03 -->
+  <div class="story">
+    <div class="eyebrow"><span class="cat">Interest Rates</span><span class="dot"></span><span class="meta">Central Banks</span></div>
+    <h2>ECB hikes for the first time since 2023; the Fed stays on hold</h2>
+    <p class="sum">On 11 June the ECB raised its key rates by 25bps (deposit facility to 2.25%) — its first increase since September 2023 and a sharp reversal after eight straight cuts — citing Middle East-driven inflation pressure. Six days later the Fed held its target range at 3.50–3.75%, with inflation still above the 2% goal on energy supply shocks.</p>
+    <details>
+      <summary><span class="tw">▸</span> The fuller picture</summary>
+      <div class="body">
+        <p>The ECB's move is the more striking of the two: after a long easing cycle, a hike signals that policymakers now see the inflation risk from energy and supply disruption as outweighing growth concerns. The bank framed the decision as robust across a range of scenarios for how the Middle East shock might evolve.</p>
+        <p>The Fed, by contrast, is sitting still. With its funds rate at 3.50–3.75%, the FOMC judged that elevated inflation — partly from energy-driven supply shocks — argues against cutting, while a cooling economy argues against hiking. The hold buys time to see which force dominates.</p>
+        <p>For markets, the divergence matters: a tightening ECB against a paused Fed shapes the euro–dollar trade and the relative cost of capital across the two blocs.</p>
+      </div>
+    </details>
+    <div class="src"><a href="https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260611~4d41bd5e83.en.html">ECB statement</a> &nbsp;·&nbsp; <a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm">Fed statement</a></div>
+  </div>
+
+  <!-- 04 -->
+  <div class="story">
+    <div class="eyebrow"><span class="cat">Stock Markets</span><span class="dot"></span><span class="meta">Equities · Latest close</span></div>
+    <h2>Tech wobble: the Nasdaq snaps a four-day slide as OpenAI IPO-delay talk swirls</h2>
+    <p class="sum">US equities steadied into the 26 June close after the Nasdaq's first four-day losing streak since February. A reported delay to OpenAI's IPO and a broader tech sell-off weighed on sentiment, while falling oil offered some relief. Indexes finished near flat as the market caught its breath.</p>
+    <table class="mkt">
+      <tr><th>Index / Asset</th><th style="text-align:right;">Level</th><th style="text-align:right;">Day</th></tr>
+      <tr><td class="idx">Nasdaq Composite</td><td class="num">~25,360</td><td class="chg dn">−0.24%</td></tr>
+      <tr><td class="idx">S&amp;P 500</td><td class="num">~7,357</td><td class="chg dn">−0.05%</td></tr>
+      <tr><td class="idx">Dow Jones</td><td class="num">—</td><td class="chg dn">−0.09%</td></tr>
+      <tr><td class="idx">Brent crude</td><td class="num">~$81/bbl</td><td class="chg up">supply returning</td></tr>
+    </table>
+    <details>
+      <summary><span class="tw">▸</span> The fuller picture</summary>
+      <div class="body">
+        <p>The week's character was nervy rather than dramatic. The Nasdaq's four-day decline — its first such run since February — reflected a rotation out of richly valued tech names rather than a broad risk-off move; the S&amp;P 500 and Dow barely budged.</p>
+        <p>The OpenAI IPO-delay report fed the caution, landing as investors were already reassessing how much of the AI trade is priced for perfection. Against that, the slide in oil toward the high-$60s on WTI removed an inflation worry and gave equities a floor.</p>
+        <p>Net: a consolidation, not a turn. The signal to watch is whether tech leadership re-broadens or the selling deepens into earnings season. <em>(Figures are the most recent confirmed close, 26 June; the 9 AM send will carry the latest available numbers.)</em></p>
+      </div>
+    </details>
+    <div class="src"><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-26-2026">Read the full story <span class="pub">· TheStreet</span></a></div>
+  </div>
+
+  <!-- 05 -->
+  <div class="story">
+    <div class="eyebrow"><span class="cat">AI Development</span><span class="dot"></span><span class="meta">Models &amp; Compute</span></div>
+    <h2>The open-weight race accelerates on context length and efficiency</h2>
+    <p class="sum">A burst of open releases is reshaping the frontier: Zhipu's GLM-5.2 ships under an MIT license with a usable ~1M-token context, MiniMax M3 cuts per-token compute to roughly 1/20th of prior models with far faster long-context decoding, and NVIDIA's Cosmos 3 is billed as the first fully open "omnimodel" for physical AI. Foxconn put agents on the factory floor with its MoMClaw system.</p>
+    <details>
+      <summary><span class="tw">▸</span> The fuller picture</summary>
+      <div class="body">
+        <p>The theme of the month is efficiency and openness rather than raw scale. MiniMax M3's claimed ~20x drop in per-token compute, with 9x faster prefill and 15x faster decode at million-token contexts, points to long-context inference becoming cheap enough for routine use rather than a premium feature.</p>
+        <p>GLM-5.2's permissive MIT license matters commercially: it lets companies build on a capable mixture-of-experts model without restrictive terms, intensifying pressure on closed providers' pricing.</p>
+        <p>The more strategic shift is into "physical AI" — NVIDIA's Cosmos 3 fuses vision reasoning, world simulation and action generation, and Foxconn's MoMClaw links machine sensors to hundreds of coordinating agents on a factory line. The action is moving from chatbots toward systems that perceive and act in the physical world.</p>
+      </div>
+    </details>
+    <div class="src"><a href="https://www.devflokers.com/blog/ai-tech-news-model-releases-june-2026">Read the full story <span class="pub">· devFlokers</span></a></div>
+  </div>
+
+  <!-- 06 -->
+  <div class="story">
+    <div class="eyebrow"><span class="cat">New Breakthrough</span><span class="dot"></span><span class="meta">Science</span></div>
+    <h2>Intense UV light breaks down PFAS 'forever chemicals' — with no added reagents</h2>
+    <p class="sum">Researchers showed that hydrogen radicals generated by intense UV light can dismantle stubborn PFAS "forever chemicals" without any added chemicals — a potentially cleaner, cheaper path to destroying a notoriously persistent class of pollutants. It headlines a strong month for materials and energy science.</p>
+    <details>
+      <summary><span class="tw">▸</span> The fuller picture</summary>
+      <div class="body">
+        <p>PFAS are valued for their durability and reviled for the same reason — their carbon–fluorine bonds resist almost everything, which is why they accumulate in water, soil and bodies. Most destruction methods need aggressive reagents or extreme conditions. The UV-radical approach is notable for needing neither.</p>
+        <p>Two other June results round out the picture: a self-regulating artificial-photosynthesis system that needs no battery to balance itself, and an AI workflow (a physics-trained model nicknamed DuctGPT) that designed rare-earth-free permanent magnets while accounting for production cost and sourcing.</p>
+        <p>The common thread is processes that are simpler and more self-contained — fewer inputs, less waste — which is often what moves a lab result toward something deployable.</p>
+      </div>
+    </details>
+    <div class="src"><a href="https://www.sciencedaily.com/news/top/science/">Read the full story <span class="pub">· ScienceDaily</span></a></div>
+  </div>
+
+  <!-- 07 -->
+  <div class="story">
+    <div class="eyebrow"><span class="cat">Something Interesting</span><span class="dot"></span><span class="meta">Nature</span></div>
+    <h2>Mediterranean sperm whales may be splitting into two 'dialect' groups</h2>
+    <p class="sum">Thousands of recordings of sperm-whale clicks suggest the Mediterranean population is diverging into two groups with distinct vocal "dialects" — a cultural fault line that may be forming in real time. It's a rare glimpse of how social learning, not just genetics, can begin to divide a species.</p>
+    <details>
+      <summary><span class="tw">▸</span> The fuller picture</summary>
+      <div class="body">
+        <p>Sperm whales communicate in patterned bursts of clicks called codas, which function something like dialects — learned, group-specific, and passed down socially. Finding two emerging coda groups in one sea hints at the early stages of cultural divergence, where who a whale learns from matters as much as where it was born.</p>
+        <p>If you want a second curiosity for the commute: new evidence this month suggests Stonehenge's six-ton Altar Stone was deliberately hauled roughly 700 km from Scotland to southern England — a feat of Neolithic logistics that upends assumptions about how far prehistoric Britons moved monumental stone.</p>
+      </div>
+    </details>
+    <div class="src"><a href="https://www.livescience.com/news">Read the full story <span class="pub">· Live Science</span></a></div>
+  </div>
+
+  <!-- 08 Column -->
+  <div class="column">
+    <div class="eyebrow"><span class="cat">Notable Column</span><span class="dot" style="background:#4A4F59;"></span><span class="meta">Worth your time</span></div>
+    <h2>"The World Ahead 2026": why this year is restless but legible</h2>
+    <p class="why">Why it's worth reading: it offers a clean mental model for the year — debt matters again, AI integration triggers a regulatory and energy backlash, and the boundaries between economics, defense and technology blur into "one nervous system" where each crisis triggers the next.</p>
+    <div class="src"><a href="https://andreabelvedere.medium.com/economist-world-ahead-2026-decoding-the-signals-of-a-restless-year-54aeecf65e30">Read the essay <span class="pub">· decoding The Economist's World Ahead</span></a></div>
+  </div>
+
+  <div class="foot">
+    Curated for you · Global edition · delivered daily at 9:00 AM Yangon time.<br>
+    One held over for tomorrow: Bloomberg Opinion on how GLP-1 drugs are reshaping consumer spending.
+  </div>
+
+</div>
+</div>
+</body>
+</html>
